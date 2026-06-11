@@ -15,8 +15,7 @@ const ShopVerification = () => {
       .then(({ shops: data }) => setShops(data))
       .finally(() => setLoading(false));
   };
-
-  
+ 
   useEffect(() => { loadShops(); }, []);
 
   const updateStatus = async (id, status) => {
