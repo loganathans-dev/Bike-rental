@@ -1,0 +1,332 @@
+{
+  "users": [
+    {
+      "id": "user-customer-1",
+      "name": "Demo Customer",
+      "email": "customer@test.com",
+      "phone": "9876543210",
+      "passwordHash": "$2b$10$mJQASD3sLZtb6iEz6dx5Luiy3SqLMMRHW4NQVuzRM9Mz6SzqxSaN.",
+      "role": "customer"
+    },
+    {
+      "id": "user-partner-1",
+      "name": "Demo Partner",
+      "email": "partner@test.com",
+      "phone": "9876543211",
+      "passwordHash": "$2b$10$mJQASD3sLZtb6iEz6dx5Luiy3SqLMMRHW4NQVuzRM9Mz6SzqxSaN.",
+      "role": "consultancy",
+      "shopId": "SH-002"
+    },
+    {
+      "id": "user-admin-1",
+      "name": "Demo Admin",
+      "email": "admin@test.com",
+      "phone": "9876543212",
+      "passwordHash": "$2b$10$mJQASD3sLZtb6iEz6dx5Luiy3SqLMMRHW4NQVuzRM9Mz6SzqxSaN.",
+      "role": "admin"
+    },
+    {
+      "id": "940e196b-0b5f-4e8b-bc12-e12c78b65ede",
+      "name": "logu",
+      "email": "john.doe@example.com",
+      "phone": "9898989898",
+      "passwordHash": "$2b$10$wgsGJe1cmn6s3YdYZb.MK.tIJLKxgXfVCU2coBHGjGmsj4EbRTq32",
+      "role": "customer",
+      "shopId": null
+    },
+    {
+      "id": "05999b6f-c282-45d8-b510-2d2cb5253e3b",
+      "name": "loganathan",
+      "email": "john.doe12@example.com",
+      "phone": "",
+      "passwordHash": "$2b$10$0XZ1DL46wSetAQ45ZK862.F8DAZLM9rlAqxzFhdpAzSXbgGftGI7G",
+      "role": "consultancy",
+      "shopId": null
+    },
+    {
+      "id": "a0bb56c6-3247-4fd3-99f2-dac0b0f458e8",
+      "name": "logu",
+      "email": "john.doe1@example.com",
+      "phone": "",
+      "passwordHash": "$2b$10$F144hJPkFB2BqXq2Mg8LZeOY6WptXGiRm8eDCeAP/AVquIuR2Svp6",
+      "role": "consultancy",
+      "shopId": null
+    },
+    {
+      "id": "aae80b95-1746-4a87-927e-bfff116a6aef",
+      "name": "Test Partner",
+      "email": "debug-test@example.com",
+      "phone": "",
+      "passwordHash": "$2b$10$UrB2MSHJd6Ductcx8SFB/.xdXbMDVXw6gcM35w1WNOoEWeUWfHUIi",
+      "role": "consultancy",
+      "shopId": null
+    },
+    {
+      "id": "1af4110f-efb7-4db2-a06a-33271aec1892",
+      "name": "Atlas Test",
+      "email": "atlas-verify@test.com",
+      "phone": "",
+      "passwordHash": "$2b$10$OeFLuk2dUcizK86hcPJP9OfQV8lN8L1.zT3m0yiCnt/tmXemPyvve",
+      "role": "consultancy",
+      "shopId": null
+    }
+  ],
+  "shops": [
+    {
+      "id": "SH-001",
+      "name": "Speedy Rentals",
+      "owner": "John Doe",
+      "location": "Bangalore",
+      "status": "rejected",
+      "date": "2026-10-12",
+      "ownerId": null
+    },
+    {
+      "id": "SH-002",
+      "name": "City Bikes",
+      "owner": "Jane Smith",
+      "location": "Mumbai",
+      "status": "rejected",
+      "date": "2026-10-10",
+      "ownerId": "user-partner-1"
+    },
+    {
+      "id": "SH-003",
+      "name": "Mountain Trails",
+      "owner": "Mike Johnson",
+      "location": "Delhi",
+      "status": "rejected",
+      "date": "2026-10-09",
+      "ownerId": null
+    },
+    {
+      "id": "SH-004",
+      "name": "Eco Rides",
+      "owner": "Sarah Wilson",
+      "location": "Pune",
+      "status": "blocked",
+      "date": "2026-10-05",
+      "ownerId": null
+    },
+    {
+      "id": "SH-005",
+      "name": "Cruiser Kings",
+      "owner": "Tom Brown",
+      "location": "Goa",
+      "status": "pending",
+      "date": "2026-10-14",
+      "ownerId": null
+    }
+  ],
+  "bikes": [
+    {
+      "id": "1",
+      "shopId": "SH-002",
+      "name": "Classic 350",
+      "brand": "Royal Enfield",
+      "category": "Cruiser",
+      "location": "Bangalore",
+      "pricePerDay": 1200,
+      "pricePerHour": 80,
+      "isAvailable": true,
+      "fuelType": "Petrol",
+      "mileage": "35 kmpl",
+      "rating": 4.8,
+      "verificationStatus": "rejected",
+      "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "KA 01 AB 1234"
+    },
+    {
+      "id": "2",
+      "shopId": "SH-002",
+      "name": "Activa 6G",
+      "brand": "Honda",
+      "category": "Scooter",
+      "location": "Bangalore",
+      "pricePerDay": 400,
+      "pricePerHour": 30,
+      "isAvailable": true,
+      "fuelType": "Petrol",
+      "mileage": "50 kmpl",
+      "rating": 4.5,
+      "verificationStatus": "rejected",
+      "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "KA 02 CD 5678"
+    },
+    {
+      "id": "3",
+      "shopId": "SH-002",
+      "name": "Duke 390",
+      "brand": "KTM",
+      "category": "Sports",
+      "location": "Mumbai",
+      "pricePerDay": 1800,
+      "pricePerHour": 120,
+      "isAvailable": true,
+      "fuelType": "Petrol",
+      "mileage": "28 kmpl",
+      "rating": 4.9,
+      "verificationStatus": "approved",
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "MH 12 EF 9012"
+    },
+    {
+      "id": "4",
+      "shopId": "SH-002",
+      "name": "Access 125",
+      "brand": "Suzuki",
+      "category": "Scooter",
+      "location": "Mumbai",
+      "pricePerDay": 450,
+      "pricePerHour": 35,
+      "isAvailable": false,
+      "fuelType": "Petrol",
+      "mileage": "48 kmpl",
+      "rating": 4.3,
+      "verificationStatus": "approved",
+      "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "MH 14 GH 3456"
+    },
+    {
+      "id": "5",
+      "shopId": "SH-002",
+      "name": "Himalayan 450",
+      "brand": "Royal Enfield",
+      "category": "Adventure",
+      "location": "Delhi",
+      "pricePerDay": 1500,
+      "pricePerHour": 100,
+      "isAvailable": true,
+      "fuelType": "Petrol",
+      "mileage": "30 kmpl",
+      "rating": 4.7,
+      "verificationStatus": "pending",
+      "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "DL 03 IJ 7890"
+    },
+    {
+      "id": "6",
+      "shopId": "SH-002",
+      "name": "Ninja 300",
+      "brand": "Kawasaki",
+      "category": "Sports",
+      "location": "Delhi",
+      "pricePerDay": 2500,
+      "pricePerHour": 180,
+      "isAvailable": true,
+      "fuelType": "Petrol",
+      "mileage": "25 kmpl",
+      "rating": 4.8,
+      "verificationStatus": "approved",
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "DL 05 KL 1234"
+    },
+    {
+      "id": "7",
+      "shopId": "SH-002",
+      "name": "Pulsar NS200",
+      "brand": "Bajaj",
+      "category": "Naked",
+      "location": "Bangalore",
+      "pricePerDay": 900,
+      "pricePerHour": 60,
+      "isAvailable": false,
+      "fuelType": "Petrol",
+      "mileage": "35 kmpl",
+      "rating": 4.4,
+      "verificationStatus": "pending",
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "KA 05 MN 5678"
+    },
+    {
+      "id": "8",
+      "shopId": "SH-002",
+      "name": "Apache RTR 160",
+      "brand": "TVS",
+      "category": "Commuter",
+      "location": "Mumbai",
+      "pricePerDay": 700,
+      "pricePerHour": 50,
+      "isAvailable": true,
+      "fuelType": "Petrol",
+      "mileage": "42 kmpl",
+      "rating": 4.2,
+      "verificationStatus": "approved",
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&auto=format&fit=crop&q=60",
+      "vehicleNumber": "MH 16 OP 9012"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "BKG-98231",
+      "userId": "user-customer-1",
+      "bikeId": "1",
+      "bikeName": "Classic 350",
+      "brand": "Royal Enfield",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-17",
+      "startTime": "10:00",
+      "endTime": "10:00",
+      "status": "completed",
+      "location": "Bangalore",
+      "totalAmount": 2400,
+      "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500&auto=format&fit=crop&q=60",
+      "pickupLocation": "MG Road, Bangalore",
+      "customerName": "Demo Customer",
+      "customerEmail": "customer@test.com",
+      "customerMobile": "9876543210"
+    },
+    {
+      "id": "BKG-66282",
+      "userId": "940e196b-0b5f-4e8b-bc12-e12c78b65ede",
+      "bikeId": "6",
+      "shopId": "SH-002",
+      "bikeName": "Ninja 300",
+      "brand": "Kawasaki",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-17",
+      "startTime": "02:36",
+      "endTime": "19:36",
+      "status": "pending_payment",
+      "location": "Delhi",
+      "totalAmount": 35000,
+      "image": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&auto=format&fit=crop&q=60",
+      "pickupLocation": "chennai",
+      "customerName": "logu",
+      "customerEmail": "logu@gmil.com",
+      "customerMobile": "988778899",
+      "licence": "098778",
+      "address": "mangalam",
+      "aadhaar": "99787877"
+    }
+  ],
+  "payments": [
+    {
+      "id": "PAY-001",
+      "bookingId": "BKG-98231",
+      "customer": "Demo Customer",
+      "amount": 2400,
+      "method": "card",
+      "status": "success",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "PAY-002",
+      "bookingId": "BKG-98230",
+      "customer": "Alex Rider",
+      "amount": 1800,
+      "method": "upi",
+      "status": "pending",
+      "date": "2026-10-15"
+    },
+    {
+      "id": "PAY-003",
+      "bookingId": "BKG-98229",
+      "customer": "Sam Cruise",
+      "amount": 450,
+      "method": "wallet",
+      "status": "failed",
+      "date": "2026-10-13"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bike-rental-backend",
+  "version": "1.0.0",
+  "description": "Bike rental platform API – Express + MongoDB",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "stop-old": "sh -c 'fuser -k 5000/tcp 2>/dev/null || lsof -ti :5000 | xargs -r kill' || true",
+    "seed": "node src/seed.js",
+    "check-env": "node -e \"import('dotenv/config');import('./src/config/validateEnv.js').then(m=>{m.validateEnv();console.log('OK: .env looks configured')})\""
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1"
+  }
+}
