@@ -1,7 +1,7 @@
 import { getTokenForApi } from '../utils/auth.js';
 
 // Use Vite proxy (/api → localhost:5000) in dev; override with VITE_API_URL if needed
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://bike-rental-2lml.onrender.com/api';
 
 export class ApiError extends Error {
   constructor(message, status) {
