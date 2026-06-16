@@ -10,6 +10,7 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -101,7 +102,7 @@ const Signup = () => {
             <label htmlFor="confirmPassword" className="text-sm font-medium text-gray-600">Confirm Password</label>
             <div className="relative">
               <input 
-                type={showPassword ? "text" : "password"} 
+                type={showConfirmPassword ? "text" : "password"} 
                 id="confirmPassword" 
                 value={confirmPassword} 
                 onChange={(e) => setConfirmPassword(e.target.value)} 
@@ -111,10 +112,10 @@ const Signup = () => {
               />
               <button 
                 type="button" 
-                onClick={() => setShowPassword(!showPassword)}
+                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-purple-600 transition-colors"
               >
-                {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
               </button>
             </div>
           </div>

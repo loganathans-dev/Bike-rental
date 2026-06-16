@@ -85,6 +85,12 @@ const CustomerHome = () => {
             </div>
 
             <div className="flex items-center gap-2">
+              <button
+                onClick={() => navigate('/consultancy/signin')}
+                className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-blue-700/50 hover:bg-blue-700 rounded-xl text-xs font-medium text-blue-100 transition-colors mr-2"
+              >
+                 Partners Login
+              </button>
               {loggedIn ? (
                 <>
                   <button
